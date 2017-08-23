@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/*.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/mocha --compilers js:babel-register tests/**/*.spec.js",
     "precommit": "npm run lint"
   },
   "repository": {
@@ -19,9 +19,13 @@
   },
   "homepage": "https://github.com/dayanyrec/FizzBuzz#readme",
   "devDependencies": {
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.1",
     "eslint": "^4.5.0",
     "eslint-config-airbnb-base": "^11.3.2",
     "eslint-plugin-import": "^2.7.0",
-    "husky": "^0.14.3"
+    "husky": "^0.14.3",
+    "mocha": "^3.5.0"
   }
 }
