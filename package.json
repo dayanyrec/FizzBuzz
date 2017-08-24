@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "./node_modules/.bin/eslint **/*.js; exit 0",
+    "lint": "./node_modules/.bin/eslint --env mocha **/*.js",
     "test": "./node_modules/.bin/mocha --compilers js:babel-register tests/**/*.spec.js",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint & npm run test"
   },
   "repository": {
     "type": "git",
