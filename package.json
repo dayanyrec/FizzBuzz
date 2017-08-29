@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint --env mocha **/*.js",
     "test": "./node_modules/.bin/mocha --compilers js:babel-register tests/**/*.spec.js",
-    "precommit": "npm run lint & npm run test"
+    "precommit": "npm run lint && npm test"
   },
   "repository": {
     "type": "git",
