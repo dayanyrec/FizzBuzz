@@ -19,5 +19,6 @@ describe('FizzBuzz', () => {
 
   it('should speak the `number` if input number is not divisible by 3 or 5', () => {
     expect(fizzbuzz(2)).to.be.equal(2);
+    expect(fizzbuzz(44)).to.be.equal(44);
   });
 });
