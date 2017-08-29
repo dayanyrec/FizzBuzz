@@ -7,9 +7,12 @@
     "lint": "./node_modules/.bin/eslint --env mocha .",
     "test": "./node_modules/.bin/mocha --compilers js:babel-register tests/**/*.spec.js",
     "test:coverage": "nyc npm test",
-    "precommit": "npm run lint && npm test"
+    "precommit": "npm run lint && npm run test:coverage"
   },
   "nyc": {
+    "check-coverage": true,
+    "functions": 80,
+    "lines": 80,
     "reporter": ["text", "html"],
     "exclude": ["tests/**"]
   },
