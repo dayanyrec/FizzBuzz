@@ -21,4 +21,8 @@ describe('FizzBuzz', () => {
     expect(fizzbuzz(2)).to.be.equal(2);
     expect(fizzbuzz(44)).to.be.equal(44);
   });
+
+  it('should speak the `0` if input number is 0', () => {
+    expect(fizzbuzz(0)).to.be.equal(0);
+  });
 });
