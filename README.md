@@ -7,13 +7,13 @@ Projeto com objetivo de treinar TDD usando JS.
 
 Escreva uma lib que receba um número e:
 
-[ ] Se o número for divisível por 3, no lugar do número escreva 'Fizz'
+* [x] Se o número for divisível por 3, no lugar do número escreva 'Fizz'
 
-[ ] Se o número for divisível por 5, no lugar do número escreva 'Buzz'
+* [x] Se o número for divisível por 5, no lugar do número escreva 'Buzz'
 
-[ ] Se o número for divisível por 3 e 5, no lugar do número escreva 'FizzBuzz'
+* [x] Se o número for divisível por 3 e 5, no lugar do número escreva 'FizzBuzz'
 
-[ ] Se não se encaixar nas alternativas anteriores, retorna o número
+* [x] Se não se encaixar nas alternativas anteriores, retorna o número
 
 ## Rodando testes
 
