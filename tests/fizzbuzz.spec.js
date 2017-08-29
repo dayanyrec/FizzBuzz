@@ -14,5 +14,6 @@ describe('FizzBuzz', () => {
 
   it('should speak `FizzBuzz` if input number is divisible by 3 and 5', () => {
     expect(fizzbuzz(15)).to.be.equal('FizzBuzz');
+    expect(fizzbuzz(45)).to.be.equal('FizzBuzz');
   });
 });
