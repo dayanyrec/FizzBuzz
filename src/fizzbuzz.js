@@ -1,3 +1,7 @@
-const fizzbuzz = number => number % 3 === 0 ? 'Fizz' : 'Buzz';
+const fizzbuzz = (number) => {
+  if (number % 3 === 0) return 'Fizz';
+
+  return 'Buzz';
+};
 
 export default fizzbuzz;
